@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id = "div1">
+	<p id = "p1">text1</p>
+	<p id= "p2">text2</p>
+	<p id = "p3">text3</p>
+</div>
+<a href = "google.com" id = "a1">google</a>
+<script type = "text/javascript">
+var myWindow = window.open("", window,"width = 150px, height = 150px");
+	myWindow.document.write(document.getElementById('p2').innerHTML);
+</script>
+</body>
+</html>

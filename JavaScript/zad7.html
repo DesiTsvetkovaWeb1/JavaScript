@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form method = "get" action="">
+<p>Convert <input type = "number" id = "number">
+<select id = "first">
+<option  value = "1">kg</option>
+<option  value = "2.20462262">lb</option>
+</select>
+<select id= "second">
+<option   value = "2.20462262">lb</option>
+<option  value = "1">kg</option>
+</select>
+<button type= "button" onclick="myFunction()" name= "button" id = "button">Calculate</button>
+<p id="res">
+</p>
+<script type = "text/javascript">
+function myFunction(){
+	var res = 0;
+	var number = document.getElementById("number").value;
+	var first = document.getElementById("first").value;
+	var second = document.getElementById("second").value;
+	if(first != second){
+		if(first == 1){
+			res = second*number;
+		} else{
+			res = number/first;
+		}
+	} else{
+		res = number;
+	}
+	document.getElementById("res").innerHTML = res;
+	} 
+
+</script>
+</form>
+</body>
+</html>
+<!--1kg= 2.20462262lb -->

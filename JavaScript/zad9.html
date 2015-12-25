@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<img id="zoom"   onmouseover = "mOver()" onmouseout = "mOut()" src = "1.jpg" width = "100px" height = "75px">
+<img id="zoom2"  onmouseover = "mOver2()" onmouseout = "mOut2()" src = "2.jpg" width = "100px" height = "75px">
+<img id="zoom3" onmouseover = "mOver3()" onmouseout = "mOut3()" src = "3.jpg"   width = "100px" height = "75px">
+<script type = "text/javascript">
+
+function mOut(){
+	document.getElementById("zoom").style.width= "100px";
+	document.getElementById("zoom").style.height= "75px";
+}
+function mOver(){
+	document.getElementById("zoom").style.width = "200px";
+	document.getElementById("zoom").style.height = "120px";
+}
+function mOut2(){
+	document.getElementById("zoom2").style.width= "100px";
+	document.getElementById("zoom2").style.height= "75px";
+}
+function mOver2(){
+	document.getElementById("zoom2").style.width = "200px";
+	document.getElementById("zoom2").style.height = "120px";
+}
+function mOut3(){
+	document.getElementById("zoom3").style.width= "100px";
+	document.getElementById("zoom3").style.height= "75px";
+}
+function mOver3(){
+	document.getElementById("zoom3").style.width = "200px";
+	document.getElementById("zoom3").style.height = "120px";
+}
+ 
+/* function mOut(){
+	document.getElementsByTagName("zoom").style.width= "100px";
+	document.getElementsByTagName("zoom").style.height= "75px";
+}
+function mOver(){
+	document.getElementsByTagName("zoom").style.width = "200px";
+	document.getElementsByTagName("zoom").style.height = "120px";
+} */
+</script>
+</body>
+</html>

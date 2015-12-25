@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" method="get">
+<p>Radius<br/>
+<input type = "text" name = "radius" id= "radius" ></p>
+<p>Volume <br/>
+<input type = "text" name = "volume"  id = "volume" value = "0.0000" ></p>
+<p><button type = "button" onclick = "myFunction()">Calculate</button></p>
+</form>
+<script type = "text/javascript">
+function myFunction (){
+var radius = document.getElementById("radius").value; 
+document.getElementById("volume").value= (4*3.14*radius*radius*radius)/3;
+}
+</script>
+</body>
+</html>
